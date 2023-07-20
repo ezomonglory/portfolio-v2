@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
+
 const Footer = () => {
 	const [date, setDate] = useState(new Date());
 	const getDate = () => {
