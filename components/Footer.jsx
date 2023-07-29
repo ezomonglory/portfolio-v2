@@ -15,7 +15,7 @@ const Footer = () => {
 	}, [date]);
 	return (
 		<div className='flex  justify-between mb-[2rem] mt-[80px] '>
-			<div className='flex flex-col md:flex-row md:space-x-[32px]'>
+			<div className='flex flex-col md:flex-row md:space-x-[32px] neuereg'>
 				<a>
 					<h1 className=''>Github</h1>
 				</a>
@@ -35,7 +35,7 @@ const Footer = () => {
 					alt='music-icon'
 					className=''
 				/>
-				<p className='text-[14px] '>
+				<p className='text-[14px] neuereg'>
 					
 					<span className='text-[14px] text-[#7D7D7D] mt-4'>
 						Benin,NG
@@ -46,7 +46,7 @@ const Footer = () => {
 				
 			</div>
 
-			<p className='text-[14px] text-[#7D7D7D] hidden md:block '>
+			<p className='text-[14px] text-[#7D7D7D] hidden md:block  neuereg'>
 				{" "}
 				Designed by David Otu{" "}
 			</p>
@@ -62,7 +62,7 @@ const Footer = () => {
 				/>
 				<p className='text-[14px] '>
 					
-					<span className='text-[14px] text-[#7D7D7D] mt-4'>
+					<span className='text-[14px] text-[#7D7D7D] mt-4 neuereg'>
 						Benin,NG
 					</span>
                     {" "}
@@ -71,7 +71,7 @@ const Footer = () => {
 				
 			</div>
 
-			<p className='text-[14px] text-[#7D7D7D] md:hidden block '>
+			<p className='text-[14px] text-[#7D7D7D] md:hidden block neuereg'>
 				{" "}
 				Designed by David Otu{" "}
 			</p>
