@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
 	return (
 		<div className='md:bg-[#F4F2EE] md:px-[80px] px-[20px] pt-[30px]'>
-			<div className='flex justify-between border-transparent border-[0.5px] border-b-[#9F9F9F] pb-[30px] items-center '>
+			<div className='flex justify-between border-transparent border-[0.5px] border-b-[#9F9F9F] pb-[30px] items-center fadein '>
 				<svg
 					width='53'
 					height='32'
