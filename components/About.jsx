@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+
 
 const About = () => {
 	return (
@@ -12,7 +15,13 @@ const About = () => {
 			</h1>
 
 			<div className='flex flex-col md:flex-row justify-between'>
-				<div className='bg-[#D9D9D9] w-[180px] h-[164px] md:w-[240px] md:h-[200px] mb-[24px]'></div>
+				<div className=' w-[180px] h-[164px] md:w-[240px] md:h-[200px] mb-[24px] '>
+				<motion.div
+                initial={{height:0}}
+                whileInView={{height:"100%"}}
+                className='w-[180px] h-[164px] md:w-[240px] md:h-[200px] bg-[#9F9F9F] anim'></motion.div>
+
+                </div>
 
 				<div className=" w-full md:w-[50%]">
 					<div className=' border-transparent border-[0.5px] border-b-[#9F9F9F] pb-[16px]'>
@@ -20,7 +29,7 @@ const About = () => {
 							Technologies
 						</h1>
 
-						<p className='text-[#202020] text-[16px] md:text-[24px] md:leading-[32px] leading-[24px] neuereg'>
+						<p className='text-[#202020] text-[16px] md:text-[18px] md:leading-[28px] leading-[24px] neuereg'>
 							Js react, nextjs, typrscript, tailwind, HTML & CSS
 						</p>
 					</div>
@@ -30,7 +39,7 @@ const About = () => {
 							Personal Interest
 						</h1>
 
-						<p className='text-[#202020] text-[16px] md:text-[24px] md:leading-[32px] leading-[24px] neuereg'>
+						<p className='text-[#202020] text-[16px] md:text-[18px] md:leading-[28px] leading-[24px] neuereg'>
 							I thrive on a vibrant blend of movies, music, conversations and
 							video games. Its my perfect recipe for a good time.
 						</p>

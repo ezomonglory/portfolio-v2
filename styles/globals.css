@@ -80,11 +80,11 @@ body {
 	font-family: recoletabold;
 }
 
-.marquee {
+/* .marquee {
 	position: absolute;
 	white-space: nowrap;
 	-webkit-animation: right 4s linear;
-}
+} */
 
 @-webkit-keyframes right {
 	0% {
@@ -118,36 +118,78 @@ body {
 	/* transition: all 3s; */
 }
 
-.moveTop {
-	animation: moveTop 3s ease-in;
+.scaleUp {
+	animation: scale 3s ease-in;
 }
 
 .moveDown {
 	animation: moveDown 3s ease-in;
 }
 
+.moveUp {
+	animation: moveUp 3s ease-in;
+}
 
-@keyframes moveTop {
+@keyframes scale {
+	0% {
+		/* transform: translateY(50px); */
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		/* transform: translateY(0px); */
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes moveUp {
 	0% {
 		transform: translateY(50px);
 		opacity: 0;
-		/* transform: scale(0.5); */
 	}
 	100% {
 		transform: translateY(0px);
 		opacity: 1;
-		/* transform: scale(1); */
 	}
 }
 
 @keyframes moveDown {
 	0% {
-		transform: translateY(-500px);
+		height: 0%;
 
 		/* transform: scale(0.5); */
 	}
 	100% {
-		transform: translateY(600px) ;
+		height: 100%;
 		/* transform: scale(1); */
+	}
+}
+
+.anim {
+	transition: all 0.5s ease-in;
+}
+
+.marquee-container {
+	width: 100%;
+	overflow: hidden;
+    height: max-content;
+	white-space: nowrap;
+	position: relative;
+}
+
+.marquee {
+	display: block;
+	margin: 0;
+	/* padding: 10px; */
+	animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
 	}
 }
