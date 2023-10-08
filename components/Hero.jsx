@@ -29,7 +29,13 @@ function Hero() {
 						</div>
 					</div>
 					<div className='relative md:overflow-hidden imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] b'>						
-						<div className='bg-[#D9D9D9] mt-[40px] md:mt-0 mx-auto imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] moveDown '></div>
+						<div className='bg-[#D9D9D9] mt-[40px] md:mt-0 mx-auto imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] moveDown '
+                        style={{
+                            backgroundImage:'url("/EG.jpeg")',
+                            backgroundPosition:"center",
+                            backgroundSize:"cover",
+                        }}
+                        ></div>
 					</div>
 				</div>
 			</div>

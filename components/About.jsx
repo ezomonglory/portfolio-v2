@@ -19,7 +19,13 @@ const About = () => {
 				<motion.div
                 initial={{height:0}}
                 whileInView={{height:"100%"}}
-                className='w-[180px] h-[164px] md:w-[240px] md:h-[200px] bg-[#9F9F9F] anim'></motion.div>
+                className='w-[180px] h-[164px] md:w-[240px] md:h-[200px] bg-[#9F9F9F] anim'
+                style={{
+                    backgroundImage:'url("/eg2.jpeg")',
+                    backgroundPosition:"cover",
+                    backgroundSize:"cover",
+                }}
+                ></motion.div>
 
                 </div>
 
