@@ -40,7 +40,7 @@ const About = () => {
 						</p>
 					</div>
 
-					<div className=' border-transparent border-[0.5px] border-b-[#9F9F9F] pb-[16px] mt-[32px]'>
+					<div className=' border-transparent border-[0.5px] md:border-b-[#9F9F9F] pb-[16px] mt-[32px]'>
 						<h1 className='text-[#606060] text-[20px] md:text-[24px] md:leading-[40px] leading-normal md:tracking-[0.5px] mb-[10px] recolmd'>
 							Personal Interest
 						</h1>
@@ -50,6 +50,10 @@ const About = () => {
 							video games. Its my perfect recipe for a good time.
 						</p>
 					</div>
+
+                    <div className='bg-[#DE3F3B] md:hidden  text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[24px] neuereg '>
+							Resume
+						</div>
 				</div>
 			</div>
 		</div>

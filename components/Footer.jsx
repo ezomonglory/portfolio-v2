@@ -27,8 +27,8 @@ const Footer = () => {
 		}, 6000);
 	}, [date]);
 	return (
-		<div className='flex  justify-between mb-[2rem] mt-[80px] '>
-			<div className='flex flex-col md:flex-row md:space-x-[32px] neuereg'>
+		<div className='flex  justify-between mb-[2rem] mt-[32px] md:mt-[80px] '>
+			<div className='flex flex-col space-y-[16px] md:space-y-0 md:flex-row md:space-x-[32px] neuereg'>
 				<a>
 					<h1 className=''>Github</h1>
 				</a>
@@ -64,7 +64,7 @@ const Footer = () => {
 				Designed by David Otu{" "}
 			</p>
 
-           <div className="md:hidden flex flex-col items-right justify-end">
+           <div className="md:hidden flex flex-col space-y-[16px] items-right justify-end">
            <div className='flex space-x-2 '>
             <Image
 					src='/heart.svg'
