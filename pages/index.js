@@ -20,11 +20,19 @@ export default function Home() {
 			<main className=''>
 				<Header />
 				<div className='px-[20px] md:px-[50px] lg:px-[80px]'>
-					<Hero />
-					<Works />
-					<About />
+					<div id="hero" >
+                    <Hero />
+                    </div>
+					<div id="works" >
+                    <Works />
+                    </div>
+					<div id="about" >
+                    <About />
+                    </div>
 				</div>
-				<Marquee />
+				<div id="contact" >
+                <Marquee />
+                </div>
 				<div className='px-[20px] md:px-[50px] lg:px-[80px]'>
 					<Footer />
 				</div>

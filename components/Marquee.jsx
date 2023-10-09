@@ -4,7 +4,7 @@ const Marquee = () => {
 	const marqueeRef = useRef();
 
 	const addText = () => {
-		marqueeRef.current.insertAdjacentHTML(
+		marqueeRef?.current?.insertAdjacentHTML(
 			"beforeend",
 			"GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT ME GOT A GIG FOR ME? - CONTACT MEGOT A GIG FOR ME? - CONTACT ME",
 		);

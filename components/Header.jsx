@@ -1,12 +1,14 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React, { useRef } from "react";
 
 const Header = () => {
 	const menuRef = useRef();
+	const router = useRouter();
 
 	return (
 		<div className='md:bg-[#F4F2EE] md:px-[80px] px-[20px] pt-[30px]'>
-			<div className='flex justify-between border-transparent border-[0.5px] border-b-[#9F9F9F] pb-[30px] items-center fadein '>
+			<div className='flex justify-between border-transparent border-[0.5px] border-b-[#9F9F9F] pb-[30px] items-center fadein  '>
 				<svg
 					width='53'
 					height='32'
@@ -98,14 +100,27 @@ const Header = () => {
 				</svg>
 
 				<ul className=' space-x-[48px] items-center hidden md:flex neuereg'>
-					<li className='text-[16px] text-[#202020]'>WORK</li>
-					<li className='text-[16px] text-[#202020]'>RESUME</li>
-					<li className='text-[16px] text-[#202020]'>ABOUT ME</li>
+					<a
+						href='#works'
+						className='text-[16px] text-[#202020] cursor-pointer '
+					>
+						WORK
+					</a>
+					<li className='text-[16px] text-[#202020] cursor-pointer '>RESUME</li>
+					<a
+						href='#about'
+						className='text-[16px] text-[#202020] cursor-pointer '
+					>
+						ABOUT ME
+					</a>
 				</ul>
 
-				<h1 className='text-[16px] text-[#202020] hidden md:block neuereg'>
+				<a
+					href='#contact'
+					className='text-[16px] text-[#202020] hidden md:block neuereg cursor-pointer'
+				>
 					CONTACT ME
-				</h1>
+				</a>
 
 				<Image
 					src='/menu.svg'
@@ -114,7 +129,6 @@ const Header = () => {
 					alt='menu'
 					className='block md:hidden'
 					onClick={() => {
-						console.log("jeu");
 						document.getElementById("menu").style = "right: 0px;";
 					}}
 				/>
@@ -125,11 +139,12 @@ const Header = () => {
 				className=' w-screen px-[20px] py-[104px] h-screen bg-[#EAE8E4] z-30 fixed top-0 right-[100%] flex-col space-y-[24px] anim '
 				id='menu'
 			>
-				<div className="absolute top-[40px] right-[20px] "
-                onClick={()=> {
-                    document.getElementById("menu").style = "right: 100%;";
-                }}
-                >
+				<div
+					className='absolute top-[40px] right-[20px] '
+					onClick={() => {
+						document.getElementById("menu").style = "right: 100%;";
+					}}
+				>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						width='32'
@@ -145,21 +160,55 @@ const Header = () => {
 						/>
 					</svg>
 				</div>
-				<h1 className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '>
-					Works
-				</h1>
+				<div className='flex flex-col space-y-[24px] '>
+					<a						
+						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
+						onClick={() => {
+							document.getElementById("menu").style = "right:100%";
+                            setTimeout(() => {
+                                window.location.href="/#works"
+                            }, 1000);
+						}}
+					>
+						Works
+					</a>
 
-				<h1 className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '>
-					Resume
-				</h1>
+					<a
+						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
+						onClick={() => {
+							document.getElementById("menu").style = "right:100%";
+                            setTimeout(() => {
+                                window.location.href="/#"
+                            }, 1000);
+						}}
+					>
+						Resume
+					</a>
 
-				<h1 className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '>
-					About me
-				</h1>
+					<a						
+						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
+						onClick={() => {
+							document.getElementById("menu").style = "right:100%";
+                            setTimeout(() => {
+                                window.location.href="/#about"
+                            }, 1000);
+						}}
+					>
+						About me
+					</a>
 
-				<h1 className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '>
-					contact me
-				</h1>
+					<a						
+						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
+						onClick={() => {
+							document.getElementById("menu").style = "right:100%";
+                            setTimeout(() => {
+                                window.location.href="/#contact"
+                            }, 1000);
+						}}
+					>
+						contact me
+					</a>
+				</div>
 			</div>
 		</div>
 	);
