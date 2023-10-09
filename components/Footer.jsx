@@ -18,6 +18,18 @@ const Footer = () => {
           }
         }
       }
+
+      const Hours = () => {
+        if(date){
+          const minute =  date.getHours()
+          const string = minute.toString()
+          if(string.length === 1){
+           return `0${string}`
+          }else{
+           return string
+          }
+        }
+      }
    
 
 	useEffect(() => {
@@ -53,7 +65,7 @@ const Footer = () => {
 						Benin,NG
 					</span>
                     {" "}
-                    {date?.getHours()}:{Minutes()}{" "}
+                    {Hours()}:{Minutes()}{" "}
 				</p>
 				
 			</div>
@@ -78,7 +90,7 @@ const Footer = () => {
 						Benin,NG
 					</span>
                     {" "}
-                {date?.getHours()}:{Minutes()}{" "}
+                {Hours()}:{Minutes()}{" "}
 				</p>
 				
 			</div>

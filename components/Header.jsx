@@ -161,13 +161,18 @@ const Header = () => {
 					</svg>
 				</div>
 				<div className='flex flex-col space-y-[24px] '>
-					<a						
+					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "right:100%";
-                            setTimeout(() => {
-                                window.location.href="/#works"
-                            }, 1000);
+							document.getElementById("menu").style = "display:none";
+							setTimeout(() => {
+								document.getElementById("menu").style = "right:100%";
+								// window.location.href = "/#works";
+							}, 1000);
+							router.push("/#works");
+							//     setTimeout(() => {
+							//         window.location.href="/#works"
+							//     }, 1000);
 						}}
 					>
 						Works
@@ -176,34 +181,38 @@ const Header = () => {
 					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "right:100%";
-                            setTimeout(() => {
-                                window.location.href="/#"
-                            }, 1000);
+							// document.getElementById("menu").style = "right:100%";
+							// setTimeout(() => {
+							// 	window.location.href = "/#";
+							// }, 1000);
 						}}
 					>
 						Resume
 					</a>
 
-					<a						
+					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "right:100%";
-                            setTimeout(() => {
-                                window.location.href="/#about"
-                            }, 1000);
+							document.getElementById("menu").style = "display:none";
+							router.push("/#about");
+							setTimeout(() => {
+								document.getElementById("menu").style = "right:100%";
+								// window.location.href = "/#contact";
+							}, 1000);
 						}}
 					>
 						About me
 					</a>
 
-					<a						
+					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "right:100%";
-                            setTimeout(() => {
-                                window.location.href="/#contact"
-                            }, 1000);
+							document.getElementById("menu").style = "display:none";
+							router.push("/#contact");
+							setTimeout(() => {
+								document.getElementById("menu").style = "right:100%";
+								// window.location.href = "/#contact";
+							}, 1000);
 						}}
 					>
 						contact me
