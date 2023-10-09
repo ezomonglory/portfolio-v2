@@ -4,8 +4,7 @@ import React, { useEffect, useState } from "react";
 const Footer = () => {
 	const [date, setDate] = useState(new Date());
 	const getDate = () => {
-		setDate(new Date());
-		console.log(date?.getMinutes(), date?.getHours());
+		setDate(new Date());		
 	};
 
     const Minutes = () => {
@@ -65,7 +64,7 @@ const Footer = () => {
 			</p>
 
            <div className="md:hidden flex flex-col space-y-[16px] items-right justify-end">
-           <div className='flex space-x-2 '>
+           <div className='flex space-x-2 justify-end '>
             <Image
 					src='/heart.svg'
 					width={20}
@@ -73,7 +72,7 @@ const Footer = () => {
 					alt='music-icon'
 					className=''
 				/>
-				<p className='text-[14px] '>
+				<p className='text-[14px] neuereg '>
 					
 					<span className='text-[14px] text-[#7D7D7D] mt-4 neuereg'>
 						Benin,NG
@@ -84,7 +83,7 @@ const Footer = () => {
 				
 			</div>
 
-			<p className='text-[14px] text-[#7D7D7D] md:hidden block neuereg'>
+			<p className='text-[14px] text-right text-[#7D7D7D] md:hidden block neuereg'>
 				{" "}
 				Designed by David Otu{" "}
 			</p>

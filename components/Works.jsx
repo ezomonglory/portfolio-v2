@@ -10,7 +10,7 @@ const Works = () => {
 				<h1 className="text-[32px] tracking-[-1px] leading-[36px] md:text-[64px] md:leading-[60px] md:tracking-[-2px] text-[#202020] recolmd">
 					Projects <span className="text-[#606060] text-[18px] leading-[24px] tracking-normal ">(20-23)</span>
 				</h1>
-				<p className="sm:text-[20px] text-[#606060] mt-[8px] md:mt-[16px] text-[18px] leading-[28px] neue-reg ">
+				<p className="sm:text-[20px] text-[#606060] mt-[8px] md:mt-[16px] text-[14px] leading-[20px] md:leading-[28px] neue-reg ">
 					The selected projects showcased here encompass a diverse range of
 					exploratory , Collaborative and clients owned works.
 				</p>
