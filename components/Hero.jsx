@@ -5,7 +5,7 @@ function Hero() {
 		<div className=' h-[100vh] md:h-[800px] relative'>
 			<div className='bg-[#111821] lg:pt-[50px] xl:pt-[56px] pt-[40px] md:pt-[50px] px-[25px] lg:px-[90px] xl:px-[100px] 2xl:px-[118px] h-[80vh]  md:h-[750px]  mt-[32px] w-full b'>
 				<div className='overflow-hidden'>
-					<h1 className='w-full text-[48px] md:text-[90px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px] text-white text-center tracking-[-2px] md:leading-[90px] leading-[60px] md:tracking-[-4px] lg:leading-[90px] xl:leading-[110px] mb-[20px] md:mb-[48px] sm:text-[70px] recolreg bg-yellow500 scaleUp'>
+					<h1 className='w-full text-[48px] md:text-[90px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px] text-white text-center tracking-[-2px] md:leading-[90px] leading-[60px] md:tracking-[-4%] lg:leading-[90px] xl:leading-[110px] mb-[20px] md:mb-[48px] sm:text-[70px] recolreg bg-yellow500 scaleUp'>
 						NEED A FRONTEND DEVELOPER?
 					</h1>
 				</div>
@@ -31,8 +31,8 @@ function Hero() {
 					<div className='relative md:overflow-hidden imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] b'>						
 						<div className='bg-[#D9D9D9] mt-[40px] md:mt-0 mx-auto imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] moveDown '
                         style={{
-                            backgroundImage:'url("/EG.jpeg")',
-                            backgroundPosition:"center",
+                            backgroundImage:'url("/eg2.JPG")',
+                            backgroundPosition:"top",
                             backgroundSize:"cover",
                         }}
                         ></div>

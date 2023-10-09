@@ -8,6 +8,19 @@ const Footer = () => {
 		console.log(date?.getMinutes(), date?.getHours());
 	};
 
+    const Minutes = () => {
+        if(date){
+          const minute =  date.getMinutes()
+          const string = minute.toString()
+          if(string.length === 1){
+           return `0${string}`
+          }else{
+           return string
+          }
+        }
+      }
+   
+
 	useEffect(() => {
 		setInterval(() => {
 			getDate();
@@ -41,7 +54,7 @@ const Footer = () => {
 						Benin,NG
 					</span>
                     {" "}
-                    {date?.getHours()}:{date?.getMinutes()}{" "}
+                    {date?.getHours()}:{Minutes()}{" "}
 				</p>
 				
 			</div>
@@ -66,7 +79,7 @@ const Footer = () => {
 						Benin,NG
 					</span>
                     {" "}
-                    {date?.getHours()}:{date?.getMinutes()}{" "}
+                {date?.getHours()}:{Minutes()}{" "}
 				</p>
 				
 			</div>

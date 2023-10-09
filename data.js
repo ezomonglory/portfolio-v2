@@ -1,31 +1,31 @@
 export const  works = [
     {
         number:"01",
-        name:"OjarhProperties",
+        name:"AttendX",
         href:"#",
     },
     
     {
         number:"02",
-        name:"Devnaija",
+        name:"CSC21-22",
         href:"#",
     },
 
     {
         number:"03",
-        name:"Forkify",
+        name:"David Otu",
         href:"#",
     },
 
     {
         number:"04",
-        name:"Crappo",
+        name:"Anonverse",
         href:"#",
     },
 
     {
         number:"05",
-        name:"Sollarmint",
+        name:"ITMB PLC",
         href:"#",
     },
 ]

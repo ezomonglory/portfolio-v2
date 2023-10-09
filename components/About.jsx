@@ -15,13 +15,13 @@ const About = () => {
 			</h1>
 
 			<div className='flex flex-col md:flex-row justify-between'>
-				<div className=' w-[180px] h-[164px] md:w-[240px] md:h-[200px] mb-[24px] '>
+				<div className=' w-[180px] h-[200px] md:w-[240px] md:h-[300px] mb-[24px] '>
 				<motion.div
                 initial={{height:0}}
                 whileInView={{height:"100%"}}
-                className='w-[180px] h-[164px] md:w-[240px] md:h-[200px] bg-[#9F9F9F] anim'
+                className='w-[180px] h-[200px] md:w-[240px] md:h-[300px] bg-[#9F9F9F] anim'
                 style={{
-                    backgroundImage:'url("/eg2.jpeg")',
+                    backgroundImage:'url("/EG.jpeg")',
                     backgroundPosition:"cover",
                     backgroundSize:"cover",
                 }}
@@ -36,7 +36,7 @@ const About = () => {
 						</h1>
 
 						<p className='text-[#202020] text-[16px] md:text-[18px] md:leading-[28px] leading-[24px] neuereg'>
-							Js react, nextjs, typrscript, tailwind, HTML & CSS
+							JavaScript, React.js, Next.js, Typrscript, Tailwindcss, Node.js, Express.js, MongoDB, HTML, CSS and more.
 						</p>
 					</div>
 
