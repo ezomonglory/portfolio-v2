@@ -24,9 +24,9 @@ function Hero() {
 							digital and interactive website <br className='hidden md:block' />{" "}
 							experience for users. */}
 						</p>
-						<div className='bg-[#DE3F3B]  text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[16px] neuemd '>
+						<a  href="mailto:ezomonglory01@gmail.com" className='bg-[#DE3F3B]  text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[16px] neuemd '>
 							Hire me
-						</div>
+						</a>
 					</div>
 					<div className='relative md:overflow-hidden imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] b'>						
 						<div className='bg-[#D9D9D9] mt-[40px] md:mt-0 mx-auto imgwidth w-[260px] h-[300px] md:w-[300px] md:h-[350px] xl:w-[398px] xl:h-[430px] moveDown '

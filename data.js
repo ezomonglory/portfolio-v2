@@ -1,31 +1,32 @@
 export const  works = [
     {
         number:"01",
-        name:"AttendX",
-        href:"#",
+        name:"CSC21-22",
+        href:"https://csc21-22.vercel.app/",
+        
     },
     
     {
         number:"02",
-        name:"CSC21-22",
-        href:"#",
+        name:"AttendX",
+        href:"https://project-nine-silk.vercel.app/",
     },
 
     {
         number:"03",
         name:"David Otu",
-        href:"#",
+        href:"https://www.davidotu.xyz/",
     },
 
     {
         number:"04",
         name:"Anonverse",
-        href:"#",
+        href:"https://staging.anonverse.live/",
     },
 
     {
         number:"05",
-        name:"ITMB PLC",
-        href:"#",
+        name:"GetLinked (Hackathon)",
+        href:"https://getlinked-hackathon-theta.vercel.app/",
     },
 ]
