@@ -118,20 +118,20 @@ body {
 }
 
 .fadein {
-	animation: fade 1s ease-in;
+	animation: fade 0.7s ease-in;
 	/* transition: all 3s; */
 }
 
 .scaleUp {
-	animation: scale 1s ease-in;
+	animation: scale 0.7s ease-in;
 }
 
 .moveDown {
-	animation: moveDown 1s ease-in;
+	animation: moveDown 0.7s ease-in;
 }
 
 .moveUp {
-	animation: moveUp 1s ease-in;
+	animation: moveUp 0.7s ease-in;
 }
 
 @keyframes scale {
