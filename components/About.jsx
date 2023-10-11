@@ -51,7 +51,7 @@ const About = () => {
 						</p>
 					</div>
 
-                    <div className='bg-[#DE3F3B]   text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[24px] neuereg '>
+                    <div className='bg-[#DE3F3B]   text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[24px] neuemd '>
 							Resume
 						</div>
 				</div>
