@@ -53,9 +53,9 @@ const About = () => {
 						</p>
 					</div>
 
-                    <div className='bg-[#DE3F3B]   text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[24px] neuemd '>
+                    <a href="/EG RESUME.pdf" download="ezomon glory resume" className='bg-[#DE3F3B]   text-white px-[64px] py-[12px] md:px-[32px] text-[16px] md:text-[20px] md:leading-[32px] leading-[24px]  inline-block rounded-full mt-[24px] neuemd '>
 							Resume
-						</div>
+						</a>
 				</div>
 			</div>
 		</div>

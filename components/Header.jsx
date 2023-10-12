@@ -106,7 +106,13 @@ const Header = () => {
 					>
 						WORK
 					</a>
-					<li className='text-[16px] text-[#202020] cursor-pointer '>RESUME</li>
+					<a
+						href='/EG RESUME.pdf'
+						download='ezomon glory resume'
+						className='text-[16px] text-[#202020] cursor-pointer '
+					>
+						RESUME
+					</a>
 					<a
 						href='#about'
 						className='text-[16px] text-[#202020] cursor-pointer '
@@ -179,13 +185,9 @@ const Header = () => {
 					</a>
 
 					<a
+						href='/EG RESUME.pdf'
+						download='ezomon glory resume'
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
-						onClick={() => {
-							// document.getElementById("menu").style = "right:100%";
-							// setTimeout(() => {
-							// 	window.location.href = "/#";
-							// }, 1000);
-						}}
 					>
 						Resume
 					</a>
