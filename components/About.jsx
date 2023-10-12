@@ -36,7 +36,7 @@ const About = () => {
 						</h1>
 
 						<p className='text-[#202020] text-[16px] md:text-[18px] md:leading-[28px] leading-[24px] neuereg'>
-							JavaScript, React.js, Next.js, Typrscript, Tailwindcss, Node.js, Express.js, MongoDB, HTML, CSS and more.
+							JavaScript, React.js, Next.js, TypeScript, Tailwindcss, Node.js, Express.js, MongoDB, HTML, CSS and more.
 						</p>
 					</div>
 
@@ -47,7 +47,7 @@ const About = () => {
 
 						<p className='text-[#202020] text-[16px] md:text-[18px] md:leading-[28px] leading-[24px] neuereg'>
 							I thrive on a vibrant blend of movies, music, conversations and
-							video games. Its my perfect recipe for a good time.
+							video games. It's my perfect recipe for a good time.
 						</p>
 					</div>
 
