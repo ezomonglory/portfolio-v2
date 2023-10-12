@@ -201,3 +201,30 @@ body {
 		transform: translateX(-100%);
 	}
 }
+
+
+@media (max-width:330px) {
+    .headtext{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .midtext{
+        font-size: 13px;
+        display: block !important;
+    }
+
+    .unmidtext{
+        display: none;
+    }
+
+    .img{
+        height: 200px;
+        margin-top: 15px;
+        width: 200px;
+    }
+}
+
+.midtext{
+    display: none;
+}
