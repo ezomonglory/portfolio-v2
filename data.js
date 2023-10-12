@@ -2,7 +2,7 @@ export const  works = [
     {
         number:"01",
         name:"CSC21-22",
-        href:"https://csc21-22.vercel.app/",
+        href:"https://csc21-22.vercel.app/",        
         
     },
     

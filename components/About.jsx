@@ -45,6 +45,7 @@ const About = () => {
 							Personal Interest
 						</h1>
 
+
 						<p className='text-[#202020] text-[16px] md:text-[18px] md:leading-[28px] leading-[24px] neuereg'>
 							I thrive on a vibrant blend of movies, music, conversations and
 							video games. It's my perfect recipe for a good time.
