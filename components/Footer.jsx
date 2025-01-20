@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const Footer = () => {
+const Footer = ({color}) => {
 	const [date, setDate] = useState(new Date());
 	const getDate = () => {
 		setDate(new Date());		
@@ -38,24 +38,24 @@ const Footer = () => {
 		}, 6000);
 	}, [date]);
 	return (
-		<div className='flex  justify-between mb-[2rem] mt-[32px] md:mt-[80px] '>
+		<div className='flex  justify-between  '>
 			<div className='flex flex-col space-y-[16px] md:space-y-0 md:flex-row md:space-x-[32px] neuereg'>
 				<a
                 href="https://github.com/ezomonglory"
                 target="_blank"
                 >
-					<h1 className=''>Github</h1>
+					<h1 className={` ${color ? color : ""} `}>Github</h1>
 				</a>
 				<a
                 href="https://www.linkedin.com/in/glory-ezomon-3b444222b/"
                 target="_blank"
                 >
-					<h1 className=''>Linkedln</h1>
+					<h1 className={` ${color ? color : ""} `}>Linkedln</h1>
 				</a>
 				<a
                 href="mailto:ezomonglory01@gmail.com"
                 >
-					<h1 className=''>Send a mail</h1>
+					<h1 className={` ${color ? color : ""} `}>Send a mail</h1>
 				</a>
 			</div>
 
@@ -67,9 +67,9 @@ const Footer = () => {
 					alt='music-icon'
 					className=''
 				/>
-				<p className='text-[14px] neuereg'>
+				<p className={`text-[14px] neuereg ${color && color} `}>
 					
-					<span className='text-[14px] text-[#7D7D7D] mt-4'>
+					<span className={`text-[14px] mt-4 ${color ? color : "text-[#7D7D7D] "} `}>
 						Benin,NG
 					</span>
                     {" "}
@@ -78,7 +78,7 @@ const Footer = () => {
 				
 			</div>
 
-			<p className='text-[14px] text-[#7D7D7D] hidden md:block  neuereg'>
+			<p className={`text-[14px] ${color ? color : "text-[#7D7D7D] "} hidden md:block  neuereg`}>
 				{" "}
 				Designed by David Otu{" "}
 			</p>
@@ -92,9 +92,9 @@ const Footer = () => {
 					alt='music-icon'
 					className=''
 				/>
-				<p className='text-[14px] neuereg '>
+				<p className={`text-[14px] neuereg ${color ?color : ""} `}>
 					
-					<span className='text-[14px] text-[#7D7D7D] mt-4 neuereg'>
+					<span className={`text-[14px]  mt-4 neuereg  ${color ? color : "text-[#7D7D7D] "} `}>
 						Benin,NG
 					</span>
                     {" "}
@@ -103,7 +103,7 @@ const Footer = () => {
 				
 			</div>
 
-			<p className='text-[14px] text-right text-[#7D7D7D] md:hidden block neuereg'>
+			<p className={`text-[14px] text-right text-[#7D7D7D] md:hidden block neuereg  ${color ? color : "text-[#7D7D7D] "} `}>
 				{" "}
 				Designed by David Otu{" "}
 			</p>

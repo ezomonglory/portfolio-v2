@@ -33,8 +33,10 @@ export default function Home() {
 				<div id="contact" >
                 <Marquee />
                 </div>
-				<div className='px-[20px] md:px-[50px] lg:px-[80px]'>
-					<Footer />
+				<div className='px-[20px] md:px-[50px] lg:px-[80px] '>
+					<div className="mb-[2rem] mt-[32px] md:mt-[80px]">
+						<Footer />
+						</div> 
 				</div>
 			</main>
 		</div>

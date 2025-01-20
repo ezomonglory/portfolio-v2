@@ -6,7 +6,7 @@ function Hero() {
 			<div className='bg-[#111821] lg:pt-[50px] xl:pt-[56px] pt-[40px] md:pt-[50px] px-[25px] lg:px-[90px] xl:px-[100px] 2xl:px-[118px] h-[80vh]  md:h-[750px]  mt-[32px] w-full b'>
 				<div className='overflow-hidden'>
 					<h1 className='w-full text-[48px] md:text-[90px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px] text-white text-center tracking-[-2px] md:leading-[90px] leading-[50px] md:tracking-[-4%] lg:leading-[90px] xl:leading-[110px] mb-[8px] md:mb-[48px] sm:text-[70px] recolreg scaleUp headtext'>
-						NEED A FRONTEND DEVELOPER?
+						NEED A FULLSTACK DEVELOPER?
 					</h1>
 				</div>
 
