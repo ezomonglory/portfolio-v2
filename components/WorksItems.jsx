@@ -9,7 +9,6 @@ const WorksItems = ({ work, i }) => {
 		<motion.a
 			className='cursor-pointer anim'
 			href={work.href}
-			target='_blank'
 			initial={{ y: "60px" }}
 			whileInView={{ y: "0px" }}
 			viewport={{
@@ -18,7 +17,7 @@ const WorksItems = ({ work, i }) => {
 		>
 			<div
 				className={`${
-					i === 4
+					i === 5
 						? "flex justify-between border-transparent border-[0.5px] border-y-[#9F9F9F] pt-[24px] pb-[60px] items-center"
 						: "flex justify-between border-transparent border-[0.5px] border-t-[#9F9F9F] items-center pt-[24px]"
 				}`}
