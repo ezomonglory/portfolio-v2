@@ -69,7 +69,7 @@ const index = () => {
     }
     const data = WorksData.find((item) => item.page === currentPage);
     setDataToDisplay(data);
-  }, [nextPage]);
+  }, []);
 
   const useStickyClassToggle = (ref, offset = 12, className = "absolute") => {
     useEffect(() => {
