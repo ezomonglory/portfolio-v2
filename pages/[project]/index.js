@@ -7,7 +7,7 @@ import Link from "next/link";
 import { WorksData } from "../../data";
 import { usePathname } from "next/navigation";
 
-const index = () => {
+const Page = () => {
   const marqueeRef = useRef();
   const marqueeRef2 = useRef();
   const stickyRef = useRef();
@@ -321,4 +321,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Page;
