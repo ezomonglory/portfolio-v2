@@ -186,12 +186,16 @@ const Page = () => {
               ))}
             </div>
           </div>
-          <div className="w-[160px] h-[160px] shrink-0 flex items-center justify-center hover:border hover:border-[#DE3F3B] hover:bg-transparent rounded-full bg-[#DE3F3B] group cursor-pointer">
-            <span className="neuemd text-white md:text-[16px] text-center group-hover:hidden">
-              Visit <br /> Website
-            </span>
-            <span className=" group-hover:block hidden ">{mainArr}</span>
-          </div>
+
+              {
+                dataToDisplay.link &&  <Link href={dataToDisplay.link} target="_blank" className="w-[160px] h-[160px] shrink-0 flex items-center justify-center hover:border hover:border-[#DE3F3B] hover:bg-transparent rounded-full bg-[#DE3F3B] group cursor-pointer">
+                <span className="neuemd text-white md:text-[16px] text-center group-hover:hidden">
+                  {dataToDisplay.type === "app" ? <>Download <br/> App!</> : <>Visit <br /> Website
+                  </>  }
+                </span>
+                <span className=" group-hover:block hidden ">{mainArr}</span>
+              </Link>
+              }
         </div>
       </div>
 

@@ -107,6 +107,7 @@ export const WorksData = [
   {
     name: "Serveet",
     page:"serveet",
+    link:"https://serveet.com/",
     next: "/dreamplanet",
     language: ["Typescript", "SQL", "Next.js"],
     overview:
@@ -157,6 +158,8 @@ export const WorksData = [
   {
     name: "Dream Planet",
     page:"dreamplanet",
+    link:"",
+    type:"app",
     next: "/david",
     language: ["Typescript", "SQL"],
     overview:
@@ -204,6 +207,7 @@ export const WorksData = [
     name: "Digital Yearbook",
     page:"digital-yearbook",
     next: "/canva",
+    link: "https://csc21-22.vercel.app",
     language: ["Nextjs"],
     role:"Frontend Developer",
     overview:
@@ -239,6 +243,7 @@ export const WorksData = [
   {
     name: "David Otu",
     page:"david",
+    link: "https://www.davidotu.tech/",
     next: "/digital-yearbook",
     language: ["Nextjs"],
     role:"Frontend Developer",
@@ -266,6 +271,7 @@ export const WorksData = [
   {
     name: "Canvas & Pixels",
     page:"canva",
+    link: "https://canva-ezomonglorys-projects.vercel.app/",
     language: ["Nextjs"],
     role:"Frontend Developer",
     overview:"Designed and developed a landing page for Canvas and Pixels, a software studio offering end-to-end services, including conceptualization, design, development, testing, deployment, and maintenance of software solutions. The website serves as a professional and visually engaging introduction to the studio's services and values.",
