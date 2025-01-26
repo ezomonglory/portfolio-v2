@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useRef } from "react";
 
-const Header = () => {
+const Header = ({next, prev}) => {
 	const menuRef = useRef();
 	const router = useRouter();
 
@@ -170,11 +171,12 @@ const Header = () => {
 					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "display:none";
-							setTimeout(() => {
-								document.getElementById("menu").style = "right:100%";
-								// window.location.href = "/#works";
-							}, 1000);
+							// document.getElementById("menu").style = "display:none";
+							// setTimeout(() => {
+							// 	document.getElementById("menu").style = "right:100%";
+							// 	// window.location.href = "/#works";
+							// }, 1000);
+							document.getElementById("menu").style = "right:100%";
 							router.push("/#works");
 							//     setTimeout(() => {
 							//         window.location.href="/#works"
@@ -195,12 +197,13 @@ const Header = () => {
 					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "display:none";
 							router.push("/#about");
-							setTimeout(() => {
-								document.getElementById("menu").style = "right:100%";
-								// window.location.href = "/#contact";
-							}, 1000);
+							document.getElementById("menu").style = "right:100%";
+							// document.getElementById("menu").style = "display:none";
+							// setTimeout(() => {
+							// 	document.getElementById("menu").style = "right:100%";
+							// 	// window.location.href = "/#contact";
+							// }, 1000);
 						}}
 					>
 						About me
@@ -209,16 +212,42 @@ const Header = () => {
 					<a
 						className='text-[20px] leading-[24px] uppercase text-[#202020] border-[0.5px] pb-[16px] px-[8px] border-transparent border-b-[#6d6b6b94] neue-md '
 						onClick={() => {
-							document.getElementById("menu").style = "display:none";
+							// document.getElementById("menu").style = "display:none";
 							router.push("/#contact");
-							setTimeout(() => {
-								document.getElementById("menu").style = "right:100%";
-								// window.location.href = "/#contact";
-							}, 1000);
+							document.getElementById("menu").style = "right:100%";
+							// setTimeout(() => {
+							// 	document.getElementById("menu").style = "right:100%";
+							// 	// window.location.href = "/#contact";
+							// }, 1000);
 						}}
 					>
 						contact me
 					</a>
+
+
+
+{/* 
+					<Link
+              href="/#works"
+              className="h-[48px] py-[10px] bg-[#DE3F3B] rounded-full px-[16px] flex items-center space-x-[8px]"
+            >
+              <span>{returnArr}</span>
+              <h2 className="neuemd text-[18px] text-white">Return</h2>
+            </Link> */}
+
+
+           {
+			next &&  <div
+			onClick={() => {
+				next();
+				document.getElementById("menu").style = "right:100%";
+			}}
+
+			className="h-[48px] py-[10px] bg-[#DE3F3B] rounded-full px-[24px] w-fit"
+		  >
+			<h2 className="neuemd text-[18px] text-white">Next project</h2>
+		  </div>
+		   }
 				</div>
 			</div>
 		</div>

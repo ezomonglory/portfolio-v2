@@ -79,9 +79,9 @@ const ImageScroll = () => {
 
   return (
     
-     <div  ref={scrollContainerRef} className="flex space-x-12 w-full overflow-x-scroll scroll-hidden ">
+     <div  ref={scrollContainerRef} className="flex space-x-6 md:space-x-12 w-full overflow-x-scroll scroll-hidden ">
      { [1,2,3,4,5,6,7,8,9,0,1,2,3].map((data, i) => (
-        <div key={i} className="h-[500px] w-[500px] shrink-0  bg-red-500" >
+        <div key={i} className="w-[95%] h-[190px]  md:h-[500px] md:w-[500px] shrink-0  bg-red-500" >
          
         </div>
       ))}
