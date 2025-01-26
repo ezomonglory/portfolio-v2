@@ -345,7 +345,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="w-[90%] mx-auto pt-[10rem] md:pt-[20rem]">
+        <div className="w-[90%] mx-auto pt-[10rem] md:pt-[20rem] pb-[40px]">
           <Footer color="text-white" />
         </div>
       </div>
