@@ -184,7 +184,7 @@ const Page = () => {
             <h2 className="recolreg text-[40px] tracking-[-1px] leading-[36px] mt-[48px] md:mt-0 md:tracking-[-1.4px] text-[#111821] md:text-[80px] capitalize">
               {dataToDisplay?.name}
             </h2>
-            <div className="flex items-center gap-[8px] w-full flex-wrap mt-[16px] md:mt-0">
+            <div className="flex items-center gap-[8px] w-full flex-wrap mt-[16px] md:mt-[32px]">
               {dataToDisplay?.language?.map((data) => (
                 <div
                   className="min-w-[146px] w-fit h-[48px] border border-[#C0C0C0] flex items-center justify-center rounded-full border-[1.2px]"
@@ -266,7 +266,7 @@ const Page = () => {
 
         <div ref={stickyRef2} className="flex flex-col space-y-[48px] ">
           <div ref={(el) => (sectionsRef.current[0] = el)} id="Overview">
-            <h2 className="recolreg text-[24px] md:text-[40px] text-white">Overview</h2>
+            <h2 className="recolreg mb-[16px] md:mb-0 text-[24px] md:text-[40px] text-white">Overview</h2>
             <p className="neuereg md:text-[20px] leading-[28px] text-white">
               {dataToDisplay?.overview}
             </p>
